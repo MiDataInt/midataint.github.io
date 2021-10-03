@@ -1,0 +1,36 @@
+# edit the following title and description to match your repository
+title: "MDI Docs Template"
+description: "Template for MDI repository documentation"
+
+# edit the following link used for the upper right navigation
+aux_links:
+  "Go To Repo on GitHub":
+    - "https://github.com/MiDataInt/mdi-documentation-template"
+
+
+# do not change any other lines in this file
+
+
+# theme information
+remote_theme: MiDataInt/just-the-docs
+logo: "/assets/images/mdi-logo-text-200.png"
+
+# only page files in the _docs directory will be displayed
+collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
+just_the_docs:
+  collections:
+    docs:
+      name: Documentation
+
+# footer content
+back_to_top: true
+back_to_top_text: "Top of page"
+footer_content: " "
+
+# web tracking
+# ga_tracking: UA-1234567-89 # Google Analytics
+plugins:
+  - jekyll-seo-tag
