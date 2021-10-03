@@ -1,6 +1,5 @@
 ---
-layout: default
-title: MDI Docs Template
+title: Michigan Data Interface
 has_children: false
 nav_order: 1
 ---

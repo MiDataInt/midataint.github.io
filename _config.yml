@@ -1,11 +1,11 @@
 # edit the following title and description to match your repository
-title: "MDI Docs Template"
-description: "Template for MDI repository documentation"
+title: "Michigan Data Interface"
+description: "A framework for developing, installing and running high-performance data analysis pipelines and visualization applications"
 
 # edit the following link used for the upper right navigation
 aux_links:
-  "Go To Repo on GitHub":
-    - "https://github.com/MiDataInt/mdi-documentation-template"
+  "Go To Project on GitHub":
+    - "https://github.com/MiDataInt"
 
 
 # do not change any other lines in this file
