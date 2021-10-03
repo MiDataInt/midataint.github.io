@@ -4,7 +4,7 @@ has_children: false
 nav_order: 2
 ---
 
-# Analysis flow
+# {{ page.title }}
 {: .no_toc }
 
 ## Table of contents
