@@ -34,3 +34,11 @@ footer_content: " "
 # ga_tracking: UA-1234567-89 # Google Analytics
 plugins:
   - jekyll-seo-tag
+
+# page defaults
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
