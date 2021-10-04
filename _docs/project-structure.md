@@ -17,7 +17,7 @@ that are the most relevant to them.
 The following diagrams illustrate the overall project structure.
 See below for a description of each component.
 
-![Repository Structure]({{ "/assets/images/repo_structure_1.png" | relative_url }})
+![Repository Structure]({{ "/assets/images/repo_structure_1.jpg" | relative_url }})
 
 ## Manager Utility
 
