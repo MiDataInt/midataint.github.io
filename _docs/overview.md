@@ -8,6 +8,4 @@ nav_order: 1
 <!--- do not change any other lines in this file -->
 <!--- DO NOT DELETE THIS FILE -->
 
-## {{ page.title }}
-
 {% include merged-overview.md %}

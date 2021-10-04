@@ -1,6 +1,6 @@
 # edit the following title and description to match your repository
 title: "Michigan Data Interface"
-description: "A framework for developing, installing and running high-performance data analysis pipelines and visualization applications"
+description: "A framework for developing, installing and running high-performance data analysis pipelines and visualization applications."
 
 # edit the following link used for the upper right navigation
 aux_links:
@@ -12,7 +12,7 @@ aux_links:
 
 
 # theme information
-remote_theme: MiDataInt/just-the-docs
+remote_theme: MiDataInt/just-the-docs-mdi
 logo: "/assets/images/mdi-logo-text-200.png"
 
 # only page files in the _docs directory will be displayed
