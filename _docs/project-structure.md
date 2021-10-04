@@ -32,6 +32,9 @@ It is not required to run the Stage 1 Pipelines if a user
 manually clones the needed repositories, but the manager will manage
 all repository cloning and management for you and is recommended. 
 
+This is the repository for the manager utility:
+<https://github.com/MiDataInt/mdi-manager>
+
 ## Command Line Utility
 
 Once a user has called the manager utility's _install()_ function,
@@ -54,7 +57,12 @@ is part of the pipelines framework. As illustrated above, there are
 two separate frameworks, one for pipelines and one for apps. 
 
 The pipelines and apps frameworks are maintained by the MDI, but are open source
-projects that you are invited to help build and improve.
+projects that you are invited to help build and improve.  These are the
+repositories for the pipelines and apps framework repositories:
+
+<https://github.com/MiDataInt/mdi-pipelines-framework>
+
+<https://github.com/MiDataInt/mdi-apps-framework>
 
 ## Suites
 
@@ -82,3 +90,10 @@ to register your suite with the MDI, who will engage in a basic level
 of code review to ensure that it is well constructed, appropriate, and
 not nefarious. Such audited suites will be advertised within the frameworks.
 You can also share your suites within a smaller group as you wish.
+
+We make it easy for you to get started building your own pipelines and apps
+suites by providing the following repository templates:
+
+<https://github.com/MiDataInt/mdi-pipelines-suite-template>
+
+<https://github.com/MiDataInt/mdi-apps-suite-template>
