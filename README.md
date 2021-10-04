@@ -1,15 +1,14 @@
-<!--- README.md is always the 1st page loaded by GitHub Pages on github.io  --->
-## {{ site.title }}
+<!--- do not delete these lines, they create the default, i.e., root, page  --->
 {% include merged-overview.md %}
-
 <div style="display: {% if site %} none {% else %} block {% endif %};">
   
 ## Repository description
 
 This is the repository for the main documentation web site of the **Michigan Data Interface**.
 
-This site uses a fork and minor revision of the open source documentation 
-theme [Just the Docs](https://pmarsceill.github.io/just-the-docs/).
+This site uses a permanent, customized fork of the open source Jekyll documentation 
+theme [Just the Docs](https://pmarsceill.github.io/just-the-docs/), called
+[just-the-docs-mdi](https://github.com/MiDataInt/just-the-docs-mdi).
 
 ## Just the Docs usage
 
@@ -23,4 +22,3 @@ The content of this repository and web site is subject to
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/).
 
 </div>
-
