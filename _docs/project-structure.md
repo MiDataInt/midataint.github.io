@@ -8,12 +8,12 @@ nav_order: 3
 
 ## Overview
 
-The MDI codebase is organized into modular components
-that help provide the ease and flexibility of use and development.
-The following diagrams illustrate this basic structure, as elaborated
-below.
+The MDI codebase is organized into modular repositories
+that help provide ease and flexibility for end users and developers.
+The following diagrams illustrate this basic project structure.
+See below for a more detailed description of each componennt.
 
-## Manager
+## Manager Utility
 
 Pending.
 
