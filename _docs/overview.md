@@ -19,14 +19,15 @@ specific components of the MDI, e.g., how to get started
 
 The following static images provide a quick visual orientation to the MDI.
 
-<div style="width: 30%; display: inline-block;">
-      <a width="100%" href="{{ "/assets/images/stage1-command-line-screenshot.jpg" | relative_url }}"><img src="{{ "/assets/images/stage1-command-line-screenshot.jpg" | relative_url }}" /></a>
-      <p>Stage 1 pipelines via command line, YAML-based tool and job definitions</p>
-</div>
-<div style="width: 30%; display: inline-block;">
-      <a width="100%" href="{{ "/assets/images/stage1-apps-screenshot.jpg" | relative_url }}"><img src="{{ "/assets/images/stage1-apps-screenshot.jpg" | relative_url }}" /></a>
-      <p>Stage 2 interactive apps via a public, limited access web server</p>
-</div>
+{% include screenshot.html 
+   image="stage1-command-line.jpg" 
+   caption="Stage 1 pipelines via command line, YAML-based tool and job definition" %}
+{% include screenshot.html 
+   image="pipeline-runner.jpg" 
+   caption="Pipeline Runner web app running Stage 1 pipelines, remote server access" %}
+{% include screenshot.html 
+   image="stage2-apps.jpg" 
+   caption="Stage 2 interactive apps via a public, limited access web server" %}
 
 ## Quick Start
 
@@ -36,7 +37,7 @@ for your desktop computer, which you can use to install and run the MDI.
 - <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
 Alternatively, follow these instructions to clone the 
-MDI manager repository and install the pipeline and app frameworks.
+MDI manager repository and install the pipeline and app frameworks using R.
 
 - <https://github.com/MiDataInt/mdi-manager#install-the-server-manager-and-framework>
 
@@ -69,7 +70,7 @@ Shiny, job schedulers, etc.
 
 ## Portability
 
-As the name implies, the MDI was started to support researchers
+As the name implies, the MDI was created to support researchers
 at the University of Michigan; a few instructions will be specific 
 to our environment. However, the MDI codebase is generic and can 
 be used by any laboratory or organization under the MIT license.
