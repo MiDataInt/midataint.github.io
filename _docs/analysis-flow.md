@@ -1,5 +1,5 @@
 ---
-title: Analysis Flow
+title: Analysis Stages
 has_children: false
 nav_order: 2
 ---
@@ -25,26 +25,31 @@ actions coordinated by scripts. Stage 1 pipelines are generally:
 - sample autonomous, i.e., they are executed "per sample"
 - executed only once on an input data set, not iteratively
 - executed the same way on every sample, regardless of the experiment
-- hands-off, i.e. not interactive
+- hands-off, i.e., not interactive
 - resource intensive, in storage and/or CPU needs
-- executed on a high-performance compute (HPC) cluster
+- executed on a high-performance computing (HPC) cluster
 - dependent on large input data files
-- capable of producing small output data files suitable for Stage 2 apps
+- capable of producing smaller output data files
 
-Although the above properties are not hard-and-fast rules, they collectively make Stage 1 pipelines well suited to being run by a core facility or data producer according to agreed upon best practices. They are also ideal for a cluster server, which the 'mdi' command line utility helps manage.
+The above properties make Stage 1 pipelines well suited to being run by a core facility 
+or data producer according to agreed upon best practices. They are also ideal for a 
+cluster server, which the 'mdi' command line utility helps manage.
 
-Common examples of Stage 1 pipelines are read alignment to a genome, bulk image processing, and training of machine learning algorithms.
+Examples of Stage 1 pipeline actions are read alignment to a genome, 
+bulk image processing, and training of machine learning algorithms.
 
-The pipelines framework does not encode data analysis pipelines themselves, which are found in other code repositories called 'pipelines suites'. Instead, the pipelines frameworks encodes script utilities that:
+The pipelines framework does not encode data analysis pipelines themselves, 
+which are found in other code repositories called 'pipelines suites'. 
+Instead, the framework encodes script utilities that:
 
 - allow simple YAML configuration files to be used to define a pipeline
-- wrap pipelines into a friendly command-line executable function
+- wrap pipelines in a friendly command-line executable function
 - coordinate pipeline job submission to HPC schedulers
 
 ## Stage 2: Visualization Apps
 
-Once data are processed in initial steps, Stage 2 applications, or "apps",
-support interactive graphical data visualization characterized by:
+Once data are processed by pipelines, Stage 2 applications, or "apps",
+support interactive, graphical data visualization characterized by:
 
 - lower resource needs
 - execution by end users via a web interface
@@ -55,7 +60,7 @@ support interactive graphical data visualization characterized by:
 - smaller processed data files as input
 - publication-ready images and other files as output
 
-Common examples of Stage 2 apps are R Shiny web tools that make
-interactive graphs and tables. Once again, the MDI itself does not
+Examples of Stage 2 apps are R Shiny web tools that make
+interactive graphs and tables. Once again, the MDI framework does not
 carry the tools themselves, it provides a common web interface
 where all MDI apps can be easily loaded. 
