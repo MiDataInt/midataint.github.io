@@ -20,11 +20,11 @@ specific components of the MDI, e.g., how to get started
 The following static images provide a quick visual orientation to the MDI.
 
 <div style="width: 30%; display: inline-block;">
-      <a width="100%" href="{{ "/assets/images/stage1-command-line-screenshot.jpg" | relative_url }}"><img src="{{ "/assets/images/stage1-command-line-screenshot.jpg" | relative_url }}"</a>
+      <a width="100%" href="{{ "/assets/images/stage1-command-line-screenshot.jpg" | relative_url }}"><img src="{{ "/assets/images/stage1-command-line-screenshot.jpg" | relative_url }}" /></a>
       <p>Stage 1 pipelines via command line, YAML-based tool and job definitions</p>
 </div>
 <div style="width: 30%; display: inline-block;">
-      <a width="100%" href="{{ "/assets/images/stage1-apps-screenshot.jpg" | relative_url }}"><img src="{{ "/assets/images/stage1-apps-screenshot.jpg" | relative_url }}"</a>
+      <a width="100%" href="{{ "/assets/images/stage1-apps-screenshot.jpg" | relative_url }}"><img src="{{ "/assets/images/stage1-apps-screenshot.jpg" | relative_url }}" /></a>
       <p>Stage 2 interactive apps via a public, limited access web server</p>
 </div>
 
