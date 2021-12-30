@@ -17,22 +17,20 @@ specific components of the MDI, e.g., how to get started
 
 ## Screenshots
 
-The following static images provide a quick visual orientation to the MDI.
-
 {% include screenshot.html 
    image="stage1-command-line.jpg" 
    caption="Stage 1 pipelines via command line, YAML-based tool and job definition" %}
 {% include screenshot.html 
    image="pipeline-runner.jpg" 
-   caption="Pipeline Runner web app running Stage 1 pipelines, remote server access" %}
+   caption="Pipeline Runner web app running Stage 1 pipelines, remote HPC access" %}
 {% include screenshot.html 
    image="stage2-apps.jpg" 
-   caption="Stage 2 interactive apps via a public, limited access web server" %}
+   caption="Stage 2 interactive apps via a limited-access public web server" %}
 
 ## Quick Start
 
 Use the following web site to generate a friendly batch script
-for your desktop computer, which you can use to install and run the MDI.
+for your desktop computer, which you can use to install and run the MDI ~anywhere.
 
 - <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
@@ -61,7 +59,7 @@ Our goal is to help you develop and share
 data analysis tools more easily, or to use tools developed by others,
 without forcing too many requirements into the process. 
 
-## Basic Training
+## Basic Training for Developers
 
 This documentation assumes familiarity with open source
 code development. Please see our Basic Training tutorials
@@ -71,7 +69,7 @@ Shiny, job schedulers, etc.
 ## Portability
 
 As the name implies, the MDI was created to support researchers
-at the University of Michigan; a few instructions will be specific 
+at the University of Michigan; a few instructions are specific 
 to our environment. However, the MDI codebase is generic and can 
 be used by any laboratory or organization under the MIT license.
 
