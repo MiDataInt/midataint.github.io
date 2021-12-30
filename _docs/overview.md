@@ -13,7 +13,7 @@ nav_order: 0
 These pages describe the MDI project overall.
 Links within lead you to documentation for 
 specific components of the MDI, e.g., how to get started
-[writing your own tool suites](https://midataint.github.io/docs/project-structure/#suites).
+[writing your own tool suites]({{ "/docs/project-structure/#suites" | relative_url }}).
 
 ## Screenshots
 
@@ -25,7 +25,7 @@ specific components of the MDI, e.g., how to get started
    caption="Pipeline Runner web app running Stage 1 pipelines, remote HPC access" %}
 {% include screenshot.html 
    image="stage2-apps.jpg" 
-   caption="Stage 2 interactive apps via a limited-access public web server" %}
+   caption="Stage 2 interactive apps via a controlled-access public web server" %}
 
 ## Quick Start
 
@@ -39,7 +39,7 @@ MDI manager repository and install the pipeline and app frameworks using R.
 
 - <https://github.com/MiDataInt/mdi-manager#install-the-server-manager-and-framework>
 
-Developers should start by copying our repository templates.
+Developers should start by copying our suite repository templates.
 
 - <https://github.com/MiDataInt/mdi-pipelines-suite-template>
 - <https://github.com/MiDataInt/mdi-apps-suite-template>

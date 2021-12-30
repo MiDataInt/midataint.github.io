@@ -15,7 +15,6 @@ to allow users to access, and developers to work on, the tools
 most relevant to them.
 
 The following diagram illustrates the overall project structure.
-See below for a description of each component.
 
 ![Repository Structure]({{ "/assets/images/repo_structure_1.jpg" | relative_url }})
 
@@ -41,12 +40,13 @@ This is the repository for the MDI manager utility:
 Once a user has called the manager's _install()_ function,
 they will run Stage 1 Pipelines using the 'mdi' command line utility
 that was installed by the manager as part of the pipelines framework.
-This single wrapper utility provides a unified method of executing and 
-monitoring all pipelines. It is one of the many advantages of adding 
-your pipeline to an MDI suite.
+This single wrapper utility provides a 
+[unified method of executing and monitoring pipelines]({{ "/assets/images/screenshots/stage1-command-line.jpg" | relative_url }}). 
+It is one of the many advantages of adding your pipeline to an MDI suite.
 
-In certain usage modes, Stage 1 Pipelines can also be run in the 
-web interface's Pipeline Runner app, which calls 'mdi' on your behalf. 
+In remote usage modes, Stage 1 Pipelines can also be run in the 
+[web interface's Pipeline Runner app]({{ "/assets/images/screenshots/pipeline-runner.jpg" | relative_url }}),
+which calls 'mdi' on your behalf. 
 
 ## Frameworks
 
