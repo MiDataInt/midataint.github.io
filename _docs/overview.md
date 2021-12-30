@@ -30,7 +30,7 @@ specific components of the MDI, e.g., how to get started
 ## Quick Start
 
 Use the following web site to generate a friendly batch script
-for your desktop computer, which you can use to install and run the MDI ~anywhere.
+for your desktop computer, to install and run the MDI ~anywhere.
 
 - <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
@@ -39,7 +39,7 @@ MDI manager repository and install the pipeline and app frameworks using R.
 
 - <https://github.com/MiDataInt/mdi-manager#install-the-server-manager-and-framework>
 
-Developers should start by copying our suite repository templates.
+Tool developers should start by copying our suite repository templates.
 
 - <https://github.com/MiDataInt/mdi-pipelines-suite-template>
 - <https://github.com/MiDataInt/mdi-apps-suite-template>
@@ -55,18 +55,19 @@ Principles guiding development of the MDI are:
 - rapid collaboration and code sharing
 - interactive data analysis
 
-Our goal is to help you develop and share
+Our goal is to help you develop and share robust
 data analysis tools more easily, or to use tools developed by others,
 without forcing too many requirements into the process. 
 
 ## Basic Training for Developers
 
 This documentation assumes familiarity with open source
-code development. Please see our Basic Training tutorials
+code development. Please see our 
+[Basic Training](https://midataint.github.io/mdi-basic-training) tutorials 
 in the link below if you need help getting started with Git, R,
 Shiny, job schedulers, etc.
 
-## Portability
+## Portability and Licensing
 
 As the name implies, the MDI was created to support researchers
 at the University of Michigan; a few instructions are specific 
