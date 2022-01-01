@@ -1,6 +1,8 @@
 ## Repository description
 
-This is the repository for the main documentation web site of the **Michigan Data Interface**.
+This is the repository for the 
+[main documentation web site](https://midataint.github.io/)
+of the **Michigan Data Interface**.
 
 This site uses a permanent, customized fork of the open source Jekyll documentation 
 theme [Just the Docs](https://pmarsceill.github.io/just-the-docs/), called
