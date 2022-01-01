@@ -8,8 +8,7 @@ nav_order: 2
 
 ## Overview
 
-The MDI manages data analysis flow in two distinct steps with 
-very different handling, as depicted below. 
+The MDI manages data analysis flow in two distinct steps with different handling, as depicted below. 
 
 ![Analysis Flow]({{ "/assets/images/analysis-flow.png" | relative_url }})
 
@@ -23,7 +22,7 @@ We use 'pipeline' synonymously with 'workflow' to refer to a series of analysis
 actions coordinated by scripts. Stage 1 pipelines are generally:
 
 - sample autonomous, i.e., they are executed "per sample"
-- executed only once on an input data set, not iteratively
+- executed once on an input data set, not iteratively
 - executed the same way on every sample, regardless of the experiment
 - hands-off, i.e., not interactive
 - resource intensive, in storage and/or CPU needs
@@ -35,11 +34,11 @@ The above properties make Stage 1 pipelines well suited to being run by a core f
 or data producer according to agreed upon best practices. They are also ideal for a 
 cluster server, which the 'mdi' command line utility helps manage.
 
-Examples of Stage 1 pipeline actions are read alignment to a genome, 
-bulk image processing, and training of machine learning algorithms.
+Examples of Stage 1 pipeline actions are bulk image processing, 
+training of machine learning algorithms, and read alignment to a genome.
 
 The pipelines framework does not encode data analysis pipelines themselves, 
-which are found in other code repositories called 'pipelines suites'. 
+which are found in other code repositories called 'tool suites'. 
 Instead, the framework encodes script utilities that:
 
 - allow simple YAML configuration files to be used to define a pipeline
@@ -63,4 +62,5 @@ support interactive, graphical data visualization characterized by:
 Examples of Stage 2 apps are R Shiny web tools that make
 interactive graphs and tables. Once again, the MDI framework does not
 carry the tools themselves, it provides a common web interface
-where all MDI apps can be easily loaded. 
+where all MDI apps can be easily loaded. Developers provide apps 
+within their tool suites.

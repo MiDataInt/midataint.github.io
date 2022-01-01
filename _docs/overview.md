@@ -25,24 +25,23 @@ specific components of the MDI, e.g., how to get started
    caption="Pipeline Runner web app running Stage 1 pipelines, remote HPC access" %}
 {% include screenshot.html 
    image="stage2-apps.jpg" 
-   caption="Stage 2 interactive apps via a controlled-access public web server" %}
+   caption="Stage 2 interactive apps via a access-controlled public web server" %}
 
 ## Quick Start
 
-Use the following web site to generate a friendly batch script
-for your desktop computer, to install and run the MDI ~anywhere.
+Follow the instructions at this link to clone and run the helper script that 
+will install the MDI frameworks and your tool suites of interest.
+
+- <https://github.com/MiDataInt/mdi#install-the-mdi-frameworks>
+
+Alternatively, use the following web site to generate a friendly, customized batch 
+script for your desktop computer, e.g., to install and run the MDI remotely.
 
 - <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
-Alternatively, follow these instructions to clone the 
-MDI manager repository and install the pipeline and app frameworks using R.
+Tool developers should start by copying our suite repository template.
 
-- <https://github.com/MiDataInt/mdi-manager#install-the-server-manager-and-framework>
-
-Tool developers should start by copying our suite repository templates.
-
-- <https://github.com/MiDataInt/mdi-pipelines-suite-template>
-- <https://github.com/MiDataInt/mdi-apps-suite-template>
+- <https://github.com/MiDataInt/mdi-suite-template>
 
 ## Guiding Principles
 
@@ -72,7 +71,8 @@ Shiny, job schedulers, etc.
 As the name implies, the MDI was created to support researchers
 at the University of Michigan; a few instructions are specific 
 to our environment. However, the MDI codebase is generic and can 
-be used by any laboratory or organization under the MIT license.
+be used by any laboratory or organization for any data analysis need
+under the MIT license.
 
 
 <!-- please do not alter the next line -->
