@@ -60,7 +60,7 @@ repositories for the pipelines and apps frameworks:
 Most users will simply install the frameworks using the installer or manager and not 
 think about them further.
 
-## Suites
+## Tool Suites
 
 The code that does the specific work of a pipeline or app is found in an 
 MDI tool suite repository. Tools suites are developed by anyone, such as a core 
