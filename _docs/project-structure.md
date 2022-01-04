@@ -60,7 +60,7 @@ repositories for the pipelines and apps frameworks:
 Most users will simply install the frameworks using the installer or manager and not 
 think about them further.
 
-## Suites
+## Tool Suites
 
 The code that does the specific work of a pipeline or app is found in an 
 MDI tool suite repository. Tools suites are developed by anyone, such as a core 
@@ -125,3 +125,13 @@ MDI server installation using
 - <https://github.com/MiDataInt/mdi-web-server.git>
 - <https://github.com/MiDataInt/mdi-aws-ami.git>
 
+## End User Assistance
+
+The recommended method for describing data to be analyzed
+and other options for Stage 1 pipelines is to write data
+scripts, a.k.a. YAML-format job configuration files. A final simple 
+template repository helps end users organize collections
+of data scripts in their own git repositories and archive 
+them using GitHub. 
+
+- <https://github.com/MiDataInt/mdi-data-scripts-template>
