@@ -29,17 +29,24 @@ specific components of the MDI, e.g., how to get started
 
 ## Quick Start
 
+To see 
+[this](https://github.com/MiDataInt/demo-mdi-tools)
+ **live demo** app server in action:
+
+- go to: <https://mdi-demo.wilsonte-umich.io/>
+- enter the access key: <code>mdi-demo</code>
+- click <code>Load from Server</code> and select a data package or bookmark to load
+
 Follow the instructions at this link to clone and run the helper script that 
-will install the MDI frameworks and your tool suites of interest.
+will **install the MDI** frameworks and your tool suites of interest.
 
 - <https://github.com/MiDataInt/mdi#install-the-mdi-frameworks>
 
-Alternatively, use the following web site to generate a friendly, customized batch 
-script for your desktop computer, e.g., to install and run the MDI remotely.
+Alternatively, use the following web site to generate a friendly, customized **batch script** for your desktop computer, e.g., to install and run the MDI remotely.
 
 - <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
-Tool developers should start by copying our suite repository template.
+Tool developers should start by copying our **repository suite template**.
 
 - <https://github.com/MiDataInt/mdi-suite-template>
 
