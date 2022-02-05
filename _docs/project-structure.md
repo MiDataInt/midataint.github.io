@@ -10,7 +10,7 @@ nav_order: 3
 
 The MDI codebase is organized into modular GitHub repositories
 that provide ease and flexibility for end users and developers.
-They separate functions from each other to allow users to access 
+They separate functions to allow users to access 
 &ndash; and developers to work on &ndash; 
 the tools most relevant to them.
 
@@ -20,20 +20,20 @@ The following diagram illustrates the overall project structure.
 
 ## Installation and Management Utilities
 
-The MDI Manager is an R package that provides a few simple commands to 
+The MDI Manager is an R package that provides commands to 
 _install()_ pipelines and apps and _run()_ the web interface. 
 The concept is similar to the BiocManager utility of the 
 [Bioconductor project](https://www.bioconductor.org/). 
 
 The MDI Installer is a distinct wrapper utility that makes it
-incrementally easier to run the manager utility. It also provides
+even easier to run the manager utility. It provides
 a streamlined, non-R installation alternative for people who will only 
 use Stage 1 pipelines, skipping the slower installation of Stage 2 
 R Shiny apps when they aren't needed. 
 
-Another alternative for simplifying MDI installation and management is the 
+Another alternative for MDI installation management is the 
 [MDI script generator site](https://wilsonte-umich.shinyapps.io/mdi-script-generator)
-which helps users create customized batch scripts for their local computer 
+which helps users create custom batch scripts for their local computer 
 to install, control, and use the MDI in both local and remote installations.
 
 These are the repositories for the MDI installation and management utilities:  
@@ -46,12 +46,12 @@ These are the repositories for the MDI installation and management utilities:
 
 The MDI framework repositories help run Stage 1 Pipelines and Stage 2 Apps by 
 providing code and functions that are common and useful across many tools. 
-They are the foundational building blocks that make it much easier to quickly 
+They are the foundational building blocks that make it easy to quickly 
 develop new tools. As illustrated above, there are two separate frameworks, 
 one for Stage 1 pipelines and one for Stage 2 apps. 
 
-The pipelines and apps frameworks are maintained by the MDI as open source
-projects that you are invited to help build and improve. These are the
+The pipelines and apps frameworks are maintained by the MDI as open-source
+projects that you are invited to help improve. These are the
 repositories for the pipelines and apps frameworks:
 
 - <https://github.com/MiDataInt/mdi-pipelines-framework>
@@ -62,42 +62,41 @@ think about them further.
 
 ## Tool Suites
 
-The code that does the specific work of a pipeline or app is found in an 
-MDI tool suite repository. Tools suites are developed by anyone, such as a core 
+The code that does the specific work of a pipeline or app is found in a 
+tool suite repository. Tools suites are developed by anyone, such as a core 
 facility, research laboratory, or funded project. We encourage you to make your 
-suite repositories public as open source code, which makes it easy to publish
-work performed with those tools. However, you can develop and use private 
+suite repositories public as open-source code, which makes it easy to publish
+work performed with them. However, you can develop and use private 
 suites if you provide a token that allows access to their repositories. 
 
 A suite, i.e., repository, might hold only one pipeline or app,
-but we encourage you to combine multiple related tools into a single suite
+but we encourage you to combine related tools into a single suite
 as makes sense for your activities. For example, a research laboratory
-might combine its machine learning tools into a single suite
-to make it easy for users to access them in a unified manner.
+might combine its machine learning tools into a single suite.
 Creating suites also makes it easy to share modular code between tools. 
 
 We provide mechanisms for you 
-to register your suite with the MDI and will engage in a basic level
-of review to ensure that your code is well constructed, appropriate, and
-not nefarious. Such audited suites from trusted developers can be advertised to users.
+to register your suite with the MDI and will engage in a basic
+review to ensure that your code is well-constructed, appropriate, and
+not nefarious. Audited suites from trusted developers can be advertised to users.
 
-It is easy to get started building your own tool
-suites using the following template repository:
+It is easy to build your own tool
+suites using the following template repository, emulating the demo tool
+suite derived from it:
 
 - <https://github.com/MiDataInt/mdi-suite-template>
+- <https://github.com/MiDataInt/demo-mdi-tools>
 
 ## Command Line Utility
 
-Once a user has called the manager's _install()_ function,
-they can run Stage 1 Pipelines using the 'mdi' command line utility
-that was installed as part of the pipelines framework.
+Once a user has installed the MDI,
+they can run Stage 1 Pipelines using the 'mdi' command line utility.
 This single wrapper utility provides a 
 [unified method of executing and monitoring pipelines]({{ "/assets/images/screenshots/stage1-command-line.jpg" | relative_url }}). 
 It is one of the many advantages of adding your pipeline to an MDI suite.
 
 In remote usage modes, Stage 1 Pipelines can also be run in the 
-[web interface's Pipeline Runner app]({{ "/assets/images/screenshots/pipeline-runner.jpg" | relative_url }}),
-which calls 'mdi' on your behalf. 
+[web interface's Pipeline Runner app]({{ "/assets/images/screenshots/pipeline-runner.jpg" | relative_url }}), which calls 'mdi' on your behalf. 
 
 ## Documentation
 
@@ -120,16 +119,32 @@ The latter are also built into the suite template, above.
 The MDI runs equally well on many computer infrastructures.
 The following repositories help you quickly create a publicly addressable 
 MDI server installation using 
-[Amazon Web Services](https://aws.amazon.com/). 
+[Amazon Web Services](https://aws.amazon.com/) (AWS). 
 
 - <https://github.com/MiDataInt/mdi-web-server.git>
 - <https://github.com/MiDataInt/mdi-aws-ami.git>
 
+## Singularity Container Support
+
+The MDI project places a premium on controlled compute environments 
+using 
+[conda](https://docs.conda.io/projects/conda/en/latest/index.html) 
+as well as 
+[Singularity](https://sylabs.io/)
+containers. We maintain
+a base container image that streamlines web server installation 
+and is extendible to suite-specific containers. We further maintain
+AWS machine images that help developers quickly build their own
+tool containers for sharing with others.
+
+- <https://github.com/MiDataInt/mdi-singularity-base>
+- <https://github.com/MiDataInt/mdi-container-builder>
+
 ## End User Assistance
 
 The recommended method for describing data to be analyzed
-and other options for Stage 1 pipelines is to write data
-scripts, a.k.a. YAML-format job configuration files. A final simple 
+and other options for Stage 1 pipelines is to write YAML-format data
+scripts, a.k.a. job configuration files. A final simple 
 template repository helps end users organize collections
 of data scripts in their own git repositories and archive 
 them using GitHub. 

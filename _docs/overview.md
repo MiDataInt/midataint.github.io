@@ -12,7 +12,7 @@ nav_order: 0
 
 These pages describe the MDI project overall.
 Links within lead you to documentation for 
-specific components of the MDI, e.g., how to get started
+specific components, e.g., how to get started
 [writing your own tool suites]({{ "/docs/project-structure/#suites" | relative_url }}).
 
 ## Screenshots
@@ -37,12 +37,12 @@ To see
 - enter the access key: <code>mdi-demo</code>
 - click <code>Load from Server</code> and select a data package or bookmark to load
 
-Follow the instructions at this link to clone and run the helper script that 
-will **install the MDI** frameworks and your tool suites of interest.
+Follow these instructions to clone and run the script that 
+will **install the MDI** frameworks and your tool suites of interest:
 
 - <https://github.com/MiDataInt/mdi#install-the-mdi-frameworks>
 
-Alternatively, use the following web site to generate a friendly, customized **batch script** for your desktop computer, e.g., to install and run the MDI remotely.
+Alternatively, use this web site to generate a custom **batch script** for your desktop computer, e.g., to control a remote MDI installation:
 
 - <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
@@ -51,8 +51,6 @@ Tool developers should start by copying our **repository suite template**.
 - <https://github.com/MiDataInt/mdi-suite-template>
 
 ## Guiding Principles
-
-Principles guiding development of the MDI are:
 
 - easy, standardized implementation
 - simple, effective use of modern development tools
@@ -75,9 +73,9 @@ Shiny, job schedulers, etc.
 
 ## Portability and Licensing
 
-As the name implies, the MDI was created to support researchers
-at the University of Michigan; a few instructions are specific 
-to our environment. However, the MDI codebase is generic and can 
+The MDI was created to support researchers
+at the University of Michigan and a few instructions are specific 
+to our environment. However, the codebase is generic and can 
 be used by any laboratory or organization for any data analysis need
 under the MIT license.
 
