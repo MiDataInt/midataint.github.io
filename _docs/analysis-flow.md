@@ -8,7 +8,7 @@ nav_order: 2
 
 ## Overview
 
-The MDI manages data analysis flow in two distinct steps with different handling, as depicted below. 
+The MDI manages data analysis flow in two stages with different handling, as depicted below. 
 
 ![Analysis Flow]({{ "/assets/images/analysis-flow.png" | relative_url }})
 
@@ -41,8 +41,8 @@ The pipelines framework does not encode data analysis pipelines themselves,
 which are found in other code repositories called 'tool suites'. 
 Instead, the framework encodes script utilities that:
 
-- allow simple YAML configuration files to be used to define a pipeline
-- wrap pipelines in a friendly command-line executable function
+- allow YAML configuration files to be used to define a pipeline
+- wrap pipelines in a common command-line executable function
 - coordinate pipeline job submission to HPC schedulers
 
 ## Stage 2: Visualization Apps
