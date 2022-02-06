@@ -13,7 +13,7 @@ nav_order: 0
 These pages describe the MDI project overall.
 Links within lead you to documentation for 
 specific components, e.g., how to get started
-[writing your own tool suites]({{ "/docs/project-structure/#suites" | relative_url }}).
+[writing your own tool suites]({{ "/docs/project-structure/#tool-suites" | relative_url }}).
 
 ## Screenshots
 
