@@ -27,26 +27,30 @@ specific components, e.g., how to get started
    image="stage2-apps.jpg" 
    caption="Stage 2 interactive apps via a access-controlled public web server" %}
 
-## Quick Start
+## Live Demo
 
-To see 
-[this](https://github.com/MiDataInt/demo-mdi-tools)
- **live demo** app server in action:
+To try out 
+[this repository's](https://github.com/MiDataInt/demo-mdi-tools)
+ **live demo app server**:
 
 - go to: <https://mdi-demo.wilsonte-umich.io/>
 - enter the access key: <code>mdi-demo</code>
 - click <code>Load from Server</code> and select a data package or bookmark to load
+
+## Quick Start
 
 Follow these instructions to clone and run the script that 
 will **install the MDI** frameworks and your tool suites of interest:
 
 - <https://github.com/MiDataInt/mdi#install-the-mdi-frameworks>
 
-Alternatively, use this web site to generate a custom **batch script** for your desktop computer, e.g., to control a remote MDI installation:
+Alternatively, use this web site to generate a custom **batch script** for your 
+desktop computer, e.g., to control a remote MDI installation:
 
 - <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
-Tool developers should start by copying our **repository suite template**.
+Tool developers should start by copying our **repository suite template**
+and following its [documentation](https://midataint.github.io/mdi-suite-template).
 
 - <https://github.com/MiDataInt/mdi-suite-template>
 
