@@ -4,9 +4,9 @@ has_children: true
 nav_order: 3
 ---
 
-As described in the
-[MDI project structure]({{ "/docs/project-structure" | relative_url }})
-section, using the MDI requires access to both:
+As described under
+[MDI project structure]({{ "/docs/project-structure" | relative_url }}), 
+using the MDI requires access to both:
 - the project frameworks
 - the tool suites you'd like to use
 
@@ -19,7 +19,7 @@ The installation sequence is:
 1. install the MDI
 2. load tools suites into your installation
 
-Please see the corresponding Installation tabs at the left for details.
+Please see the corresponding tabs at the left for details.
 
 ## Single-suite installation
 

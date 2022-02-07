@@ -62,10 +62,8 @@ Alternatively, install the MDI from within R as describe here:
 
 ### Remote modes
 
-In local mode,
+In local mode, PENDING.
 
 ### Public server mode
 
-Finally, if you
-
-
+Finally, PENDING.
