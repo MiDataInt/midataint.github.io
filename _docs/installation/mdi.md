@@ -40,7 +40,8 @@ using our Amazon Machine Images (AMIs):
 ## Local, Remote, and Public Apps Servers
 
 Stage 1 Pipelines nearly always run on an HPC server as linked above.
-However, there are many ways to run a Stage 2 Apps server.
+However, there are many ways to run a Stage 2 Apps server depending 
+on your needs.
 
 ### Local mode
 
@@ -56,7 +57,7 @@ to install and run the server:
 
 - batch scripts: <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
-Alternatively, install the MDI from within R as describe here:
+Alternatively, install the MDI from within R as described here:
 
 - mdi-manager: <https://github.com/MiDataInt/mdi-manager#installation>
 
