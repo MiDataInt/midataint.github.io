@@ -131,13 +131,10 @@ using
 [conda](https://docs.conda.io/projects/conda/en/latest/index.html) 
 as well as 
 [Singularity](https://sylabs.io/)
-containers. We maintain
-a base container image that streamlines web server installation 
-and is extendible to suite-specific containers. We further maintain
-AWS machine images that help developers quickly build their own
+containers. 
+We maintain AWS machine images that help developers quickly build their own
 tool containers for sharing with others.
 
-- <https://github.com/MiDataInt/mdi-singularity-base>
 - <https://github.com/MiDataInt/mdi-container-builder>
 
 ## End User Assistance
