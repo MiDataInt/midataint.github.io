@@ -79,4 +79,5 @@ to use our tool suite repository template to create your own tools:
 
 - < {{ "/mdi-suite-template" | relative_url }} >
 - {{ "/mdi-suite-template" | relative_url }}
-- < {{ "/mdi-suite-template" | relative_url }} >
+- < {{ "/mdi-suite-template" | absolute_url  }} >
+- {{ "/mdi-suite-template" | absolute_url }}
