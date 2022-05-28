@@ -16,5 +16,5 @@ by various developers.
 The following links provide information on how to tell your MDI installation
 which tool suites you wish to use by modifying file **config/suites.yml**:
 
-- <https://midataint.github.io/mdi/docs/installation.html>
-- <https://midataint.github.io/mdi-suite-template/docs/suite_sharing.html>
+- <{{ "/mdi/docs/installation.html" | absolute_url }}>
+- <{{ "/mdi-suite-template/docs/suite_sharing.html" | absolute_url }}>

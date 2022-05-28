@@ -21,7 +21,7 @@ command line utility. Its usage is described in detail
 at the link below, including how to write effective
 job configuration files. 
 
-- https://midataint.github.io/mdi
+- <{{ "/mdi" | absolute_url }}>
 
 ## Stage 2 Apps
 
@@ -77,7 +77,4 @@ can also reload an old bookmark to add new data to it, etc.
 The following link provides a detailed description of how
 to use our tool suite repository template to create your own tools:
 
-- < {{ "/mdi-suite-template" | relative_url }} >
-- {{ "/mdi-suite-template" | relative_url }}
 - <{{ "/mdi-suite-template" | absolute_url  }}>
-- {{ "/mdi-suite-template" | absolute_url }}

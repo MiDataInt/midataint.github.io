@@ -39,9 +39,9 @@ to install, control, and use the MDI in both local and remote installations.
 These are the repositories for the MDI installation and management utilities:  
 
 - <https://github.com/MiDataInt/mdi> 
-([documentation](https://midataint.github.io/mdi))
+([documentation]({{ "/mdi" | absolute_url }}))
 - <https://github.com/MiDataInt/mdi-manager> 
-([documentation](https://midataint.github.io/mdi-manager))
+([documentation]({{ "/mdi-manager" | absolute_url }}))
 - <https://github.com/MiDataInt/mdi-script-generator.git>
 
 ## Frameworks
@@ -87,7 +87,7 @@ suites using the following template repository, emulating the demo tool
 suite derived from it:
 
 - <https://github.com/MiDataInt/mdi-suite-template> 
-([documentation](https://midataint.github.io/mdi-suite-template))
+([documentation]({{ "/mdi-suite-template" | absolute_url }}))
 - <https://github.com/MiDataInt/demo-mdi-tools>
 
 ## Command Line Utility

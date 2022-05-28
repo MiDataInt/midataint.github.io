@@ -42,7 +42,7 @@ will **install the MDI** frameworks and your tool suites of interest
 on an HPC server:
 
 - <https://github.com/MiDataInt/mdi#install-the-mdi-frameworks> 
-([documentation](https://midataint.github.io/mdi/docs/installation.html))
+([documentation]({{ "/mdi/docs/installation.html" | absolute_url }}))
 
 Alternatively, use this web site to generate a custom **batch script** for your 
 desktop computer, e.g., to control a remote MDI installation or run apps locally:
@@ -50,7 +50,7 @@ desktop computer, e.g., to control a remote MDI installation or run apps locally
 - <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
 Tool developers should start by copying our **repository suite template**
-and following its [documentation](https://midataint.github.io/mdi-suite-template).
+and following its [documentation]({{ "/mdi-suite-template" | absolute_url }}).
 
 - <https://github.com/MiDataInt/mdi-suite-template>
 

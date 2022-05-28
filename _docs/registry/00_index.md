@@ -7,7 +7,7 @@ nav_order: 50
 {% include table-of-contents.md %}
 
 We are please to provide the public service of listing
-MDI tools suites we have been made aware of, below.
+MDI tools suites we have been made aware of.
 
 ## Security notice
 Be advised that people with malicious intent

@@ -22,7 +22,7 @@ If you will run **Stage 1 Pipelines** on an HPC server
 use our 'mdi' command line utility:
 
 - repository: <https://github.com/MiDataInt/mdi>
-- documentation: <https://midataint.github.io/mdi>
+- documentation: <{{ "/mdi" | absolute_url }}>
 
 If you will run **Stage 2 Apps** on data generated elsewhere,
 do that on your personal computer by generating a
@@ -33,7 +33,7 @@ batch script:
 or from within R:
 
 - repository: <https://github.com/MiDataInt/mdi-manager> 
-- documentation: <https://midataint.github.io/mdi-manager>
+- documentation: <{{ "/mdi-manager" | absolute_url }}>
 
 or set up a public web server on [Amazon Web Services](https://aws.amazon.com/) (AWS)
 using our Amazon Machine Images (AMIs):
@@ -65,7 +65,7 @@ to install and run the server:
 Alternatively, install the MDI from within R as described here:
 
 - mdi-manager: <https://github.com/MiDataInt/mdi-manager#installation>
-- documentation: <https://midataint.github.io/mdi-manager>
+- documentation: <{{ "/mdi-manager" | absolute_url }}>
 
 The advantages of this mode are security and speed.
 
