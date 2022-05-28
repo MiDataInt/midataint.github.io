@@ -77,4 +77,6 @@ can also reload an old bookmark to add new data to it, etc.
 The following link provides a detailed description of how
 to use our tool suite repository template to create your own tools:
 
-- <{{ "/mdi-suite-template" | relative_url }}>
+- < {{ "/mdi-suite-template" | relative_url }} >
+- {{ "/mdi-suite-template" | relative_url }}
+- < {{ "/mdi-suite-template" | relative_url }} >
