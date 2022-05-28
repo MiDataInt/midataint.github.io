@@ -1,7 +1,7 @@
 ---
 title: Project Structure
 has_children: false
-nav_order: 2
+nav_order: 20
 ---
 
 {% include table-of-contents.md %}
@@ -38,8 +38,10 @@ to install, control, and use the MDI in both local and remote installations.
 
 These are the repositories for the MDI installation and management utilities:  
 
-- <https://github.com/MiDataInt/mdi>
-- <https://github.com/MiDataInt/mdi-manager>
+- <https://github.com/MiDataInt/mdi> 
+([documentation](https://midataint.github.io/mdi))
+- <https://github.com/MiDataInt/mdi-manager> 
+([documentation](https://midataint.github.io/mdi-manager))
 - <https://github.com/MiDataInt/mdi-script-generator.git>
 
 ## Frameworks
@@ -84,7 +86,8 @@ It is easy to build your own tool
 suites using the following template repository, emulating the demo tool
 suite derived from it:
 
-- <https://github.com/MiDataInt/mdi-suite-template>
+- <https://github.com/MiDataInt/mdi-suite-template> 
+([documentation](https://midataint.github.io/mdi-suite-template))
 - <https://github.com/MiDataInt/demo-mdi-tools>
 
 ## Command Line Utility

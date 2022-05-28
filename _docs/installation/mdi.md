@@ -30,12 +30,17 @@ batch script:
 
 - batch scripts: <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
+or from within R:
+
+- repository: <https://github.com/MiDataInt/mdi-manager> 
+- documentation: <https://midataint.github.io/mdi-manager>
+
 or set up a public web server on [Amazon Web Services](https://aws.amazon.com/) (AWS)
 using our Amazon Machine Images (AMIs):
 
 - AWS AMIs: [mdi-empty machine images](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Images:visibility=public-images;v=3;search=:mdi-empty)
-- repository: <https://github.com/MiDataInt/mdi-aws-ami>
-- documentation: pending
+- AMI repository: <https://github.com/MiDataInt/mdi-aws-ami>
+- web server repository: <https://github.com/MiDataInt/mdi-web-server>
 
 ## Local, Remote, and Public Apps Servers
 
@@ -60,11 +65,29 @@ to install and run the server:
 Alternatively, install the MDI from within R as described here:
 
 - mdi-manager: <https://github.com/MiDataInt/mdi-manager#installation>
+- documentation: <https://midataint.github.io/mdi-manager>
+
+The advantages of this mode are security and speed.
 
 ### Remote modes
 
-In local mode, PENDING.
+You can also use the batch script generator to create
+scripts to run the MDI apps in your local web browser from a server
+running on a remote HPC server, or one of its nodes, with a connection 
+over a secure, SSH port tunnel. Instructions can be found in script generator app.
+
+- batch scripts: <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
+
+An advantage of this method is that your apps can have ready access
+to the same disk drives as your pipelines.
 
 ### Public server mode
 
-Finally, PENDING.
+As noted above, advanced users can also set up a public Stage 2 web server
+using our AWS AMIs, as described in the following repositories:
+
+- AWS AMIs: [mdi-empty machine images](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Images:visibility=public-images;v=3;search=:mdi-empty)
+- AMI repository: <https://github.com/MiDataInt/mdi-aws-ami>
+- web server repository: <https://github.com/MiDataInt/mdi-web-server>
+
+Here, the main advantage is stable, shared access between many users.
