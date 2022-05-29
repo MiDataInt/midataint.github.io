@@ -30,5 +30,30 @@ To promote transparency and safety, we only list:
 
 - open-source, publicly accessible tool suites, so you can read the
 code you are executing.
-- tool suites with publicly identified and verified authors, so you
+- tool suites with publicly identified authors, so you
  know who is responsible for the code you use.
+- code from providers who agreed in a public pull request to abide
+by the Code of Conduct below.
+
+### MDI developer Code of Conduct
+
+Tool suite developers will follow these principles when writing code
+to be executed in the Michigan Data Interface.
+
+- Tools will only perform actions on the user's system consistent with
+their stated purpose. 
+- No attempt will be made to send user data to a third party,
+over the internet or by any other means, unless doing so is a stated
+purpose of the tool and the third party is well identified or chosen
+by the user.
+- Only files understood to be derived from input options will be 
+read from the user's file system; no attempt will be made to mine 
+any other files for data.
+- All files created by a pipeline will be written to the directory defined by
+options `--output-dir` and `--data-name`, `--tmp-dir`, `--tmp-dir-large`, or 
+another path as long as it is clearly communicated by other pipeline options. 
+- All files created by an app will be written into the directory or subdirectories
+known as `mdiDir` or `MDI_DIR`, or paths specified by the user in the `paths` key of configuration file stage2-apps.yml.
+- No files created by a pipeline or app will contain executable code unless doing so is a stated purpose of the tool confirmed by the user, and, in that case, execution of that code will not do harm to the user's system.
+- All software installed on behalf of a tool, including but not limited to conda
+environments and R packages, will abide by the same rules as stated above.
