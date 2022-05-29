@@ -11,7 +11,7 @@ established code providers.
 
 Providers, please see 
 [these instructions](/mdi-suite-template/docs/suite_sharing.html#add-your-public-tools-to-the-mdi-suite-registry)
-for getting your suites listed,
+for getting your suites listed.
 
 ### Security notice
 Be advised that people with malicious intent
