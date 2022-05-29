@@ -1,0 +1,20 @@
+# the public name of a valid GitHub user or organization
+# used to verify who you are and to create links to your tools
+github_name: abc123 
+
+# create a list entry for every tool suite you wish to list in the registry
+# only pipelines, modules, and apps listed here will appear on the docs page
+# if you don't have a tool type, e.g., apps, in your suite, simply omit that section
+suites:
+  - name: suite_1 # the name must exactly match your public GitHub repo
+    description: "suite description #1"
+    category: "Category [: Subcategory]" # if possible, try to match an existing registry category
+    pipelines: # create a list entry for every pipeline, etc.
+      - name: pipeline_1 # again, names must match your repo's contents
+        description: "Stage 1 Pipeline description #1"
+    shared_modules:
+      - name: path/to/module_1 # relative to /shared/modules, usually action modules
+        description: "shared module description #1"
+    apps:
+      - name: app_1
+        description: "Stage 2 App description #1"

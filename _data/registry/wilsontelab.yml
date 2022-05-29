@@ -1,0 +1,34 @@
+github_name: wilsontelab 
+suites:
+
+  - name: genomex-mdi-tools
+    description: "Tools, modules, environments, and options for pipelines and apps that perform genomic data analysis"
+    category: "Genomics : General"
+    pipelines:
+      - name: download
+        description: "Download data files from common public data repositories"
+      - name: genmap
+        description: "Run the genmap utility to create a genome mappability profile"
+      - name: prepareBins
+        description: "Create a set of fixed-width bins with metadata for use by other pipelines"
+    shared_modules:
+      - name: align/dna-paired-end
+        description: "Clean paired-end reads and align to reference genome; output name-sorted bam/cram"
+
+  - name: svx-mdi-tools
+    description: "Pipelines and apps for genome structural variant analysis by different library strategies"
+    category: "Genomics : DNA"
+    pipelines:
+      - name: svCapture
+        description: "Characterize structural variant junctions in short-read, paired-end capture library(s)"
+      - name: svWGS
+        description: "Characterize structural variant junctions in whole-genomic, short-read, paired-end NGS data"
+      - name: wgaSeq
+        description: "Examine single-cell, whole-genome sequencing data for large CNVs/aneuploidy"
+    apps:
+      - name: svCapture
+        description: "Partner app to the svCapture pipeline"
+      - name: svWGS
+        description: "Partner app to the svWGS pipeline"
+      - name: wgaSeq
+        description: "Partner app to the wgaSeq pipeline"
