@@ -1,5 +1,5 @@
 ---
-title: By Category
+title: By Provider
 parent: Tool Suite Registry
 has_children: false
 nav_order: 10
@@ -21,9 +21,6 @@ nav_order: 10
     {{ provider.github_name }}
     <a href="https://github.com/{{ provider.github_name }}">View on GitHub</a>
 </h3>
-
-<!-- end suite block -->
-{% for suite in provider.suites %}
 <table>
     <tr>
         <th>Suite</th>
@@ -31,23 +28,24 @@ nav_order: 10
         <th>Pipelines</th>
         <th>Modules</th>
         <th>Apps</th>
-        <th>Description</th>
     </tr>
+
+<!-- suite block -->
+{% for suite in provider.suites %}
     <tr>
         <td>{{ suite.name }}</td>
         <td>{{ suite.category }}</td>
         <td></td>
         <td></td>
         <td></td>
-        <td>{{ suite.description }}</td>
     </tr>
-
-
-<!-- end suite block -->
-</table>
+    <tr>
+        <td colspan="5">{{ suite.description }}</td>
+    </tr>
 {% endfor %}
 
 <!-- end provider block -->
+</table>
 {% endunless %}
 {% endfor %}
 
