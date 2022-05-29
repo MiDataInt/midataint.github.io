@@ -31,16 +31,37 @@ nav_order: 10
         <th>Apps</th>
     </tr>
 
-<!-- suite block -->
+<!-- begin suite block -->
 {% for suite in provider.suites %}
     {% capture ghs %}{{ ghp }}/{{ suite.name }}{% endcapture %}
+    {% capture ght %}{{ ghs }}/tree/main{% endcapture %}
     <tr>
-        <td><strong><a href="https://github.com/{{ provider.github_name }}">{{ suite.name }}</strong></a></td>
+        <td><strong><a href="{{ ghp }}">{{ suite.name }}</strong></a></td>
         <td>{{ suite.category }}</td>
-        <td></td>
-        <td></td>
-        <td></td>
+
+        <!-- pipeline block -->
+        <td>        
+            {% for pipeline in suite.pipelines %}
+            <a href="{{ ght }}/pipelines/{{ pipeline.name }}" title="{{ pipeline.description }}">{{ pipeline.name }}</a><br>
+            {% endfor %}
+        </td>
+
+        <!-- module block -->
+        <td>        
+            {% for module in suite.shared_modules %}
+            <a href="{{ ght }}/shared_modules/{{ module.name }}" title="{{ module.description }}">{{ module.name }}</a><br>
+            {% endfor %}
+        </td>
+
+        <!-- app block -->
+        <td>        
+            {% for app in suite.apps %}
+            <a href="{{ ght }}/shiny/apps/{{ app.name }}" title="{{ app.description }}">{{ app.name }}</a><br>
+            {% endfor %}
+        </td>
     </tr>
+
+<!-- end suite block -->
     <tr>
         <td></td>
         <td colspan="4">{{ suite.description }}</td>
@@ -51,16 +72,3 @@ nav_order: 10
 </table>
 {% endunless %}
 {% endfor %}
-
-
-<!-- <pre>_template{
-    "github_name"=>"_templateUser", 
-    "suites"=>[{
-        "name"=>"suite_1", 
-        "description"=>"suite description #1", 
-        "category"=>"Category [: Subcategory]", 
-        "pipelines"=>[{"name"=>"pipeline_1",  "description"=>"Stage 1 Pipeline description #1"}], 
-        "shared_modules"=>[{"name"=>"path/to/module_1", "description"=>"shared module description #1"}], 
-        "apps"=>[{"name"=>"app_1", "description"=>"Stage 2 App description #1"}]
-    }]
-}</pre> -->
