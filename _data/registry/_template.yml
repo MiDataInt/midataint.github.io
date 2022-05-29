@@ -1,6 +1,6 @@
 # the public name of a valid GitHub user or organization
 # used to verify who you are and to create links to your tools
-github_name: abc123 
+github_name: _templateUser 
 
 # create a list entry for every tool suite you wish to list in the registry
 # only pipelines, modules, and apps listed here will appear on the docs page
