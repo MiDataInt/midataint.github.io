@@ -1,0 +1,12 @@
+github_name: MiDataInt
+description: "The Michigan Data Interface team" 
+suites:
+  - name: demo-mdi-tools 
+    description: "Working demo of a Michigan Data Interface tool suite launched from the mdi-suite-template repository"
+    category: "Demo"
+    pipelines:
+      - name: demo 
+        description: "Simple working demo pipeline to get you started"
+    apps:
+      - name: demo
+        description: "Simple working demo app to get you started"

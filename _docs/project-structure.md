@@ -39,9 +39,9 @@ to install, control, and use the MDI in both local and remote installations.
 These are the repositories for the MDI installation and management utilities:  
 
 - <https://github.com/MiDataInt/mdi> 
-([documentation]({{ "/mdi" | absolute_url }}))
+([documentation](/mdi))
 - <https://github.com/MiDataInt/mdi-manager> 
-([documentation]({{ "/mdi-manager" | absolute_url }}))
+([documentation](/mdi-manager))
 - <https://github.com/MiDataInt/mdi-script-generator.git>
 
 ## Frameworks
@@ -69,7 +69,7 @@ tool suite repository. Tools suites are developed by anyone, such as a core
 facility, research laboratory, or funded project. We encourage you to make your 
 suite repositories public as open-source code, which makes it easy to publish
 work performed with them. However, you can develop and use private 
-suites if you provide a token that allows access to their repositories. 
+suites if you provide a token that allows access to the repositories. 
 
 A suite, i.e., repository, might hold only one pipeline or app,
 but we encourage you to combine related tools into a single suite
@@ -80,14 +80,14 @@ Creating suites also makes it easy to share modular code between tools.
 We provide mechanisms for you 
 to register your suite with the MDI and will engage in a basic
 review to ensure that your code is well-constructed, appropriate, and
-not nefarious. Audited suites from trusted developers can be advertised to users.
+not nefarious. 
 
 It is easy to build your own tool
 suites using the following template repository, emulating the demo tool
 suite derived from it:
 
 - <https://github.com/MiDataInt/mdi-suite-template> 
-([documentation]({{ "/mdi-suite-template" | absolute_url }}))
+([documentation](/mdi-suite-template))
 - <https://github.com/MiDataInt/demo-mdi-tools>
 
 ## Command Line Utility
