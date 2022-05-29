@@ -16,10 +16,11 @@ nav_order: 10
 {% for provider_hash in site.data.registry %}
 {% assign provider = provider_hash[1] %}
 {% unless provider.github_name == "_templateUser" %}
+{% capture ghp %}https://github.com/{{ provider.github_name }}{% endcapture %}
 <a href="#{{ provider.github_name }}"></a>
 <h3>
     {{ provider.github_name }}
-    <a href="https://github.com/{{ provider.github_name }}">View on GitHub</a>
+    <a href="{{ ghp }}" style="font-size: 0.65em;">View on GitHub</a>
 </h3>
 <table>
     <tr>
@@ -32,15 +33,17 @@ nav_order: 10
 
 <!-- suite block -->
 {% for suite in provider.suites %}
+    {% capture ghs %}{{ ghp }}/{{ suite.name }}{% endcapture %}
     <tr>
-        <td>{{ suite.name }}</td>
+        <td><strong><a href="https://github.com/{{ provider.github_name }}">{{ suite.name }}</strong></a></td>
         <td>{{ suite.category }}</td>
         <td></td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td colspan="5">{{ suite.description }}</td>
+        <td></td>
+        <td colspan="4">{{ suite.description }}</td>
     </tr>
 {% endfor %}
 
