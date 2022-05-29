@@ -1,6 +1,9 @@
 github_name: wilsontelab 
+description: "Thomas E. Wilson laboratory, University of Michigan" 
+
 suites:
 
+# genomex-mdi-tools
   - name: genomex-mdi-tools
     description: "Tools, modules, environments, and options for pipelines and apps that perform genomic data analysis"
     category: "Genomics : General"
@@ -15,6 +18,7 @@ suites:
       - name: align/dna-paired-end
         description: "Clean paired-end reads and align to reference genome; output name-sorted bam/cram"
 
+# svx-mdi-tools
   - name: svx-mdi-tools
     description: "Pipelines and apps for genome structural variant analysis by different library strategies"
     category: "Genomics : DNA"
