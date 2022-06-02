@@ -56,8 +56,10 @@ The pipelines and apps frameworks are maintained by the MDI as open-source
 projects that you are invited to help improve. These are the
 repositories for the pipelines and apps frameworks:
 
-- <https://github.com/MiDataInt/mdi-pipelines-framework>
-- <https://github.com/MiDataInt/mdi-apps-framework>
+- <https://github.com/MiDataInt/mdi-pipelines-framework> 
+([documentation](/mdi-pipelines-framework))
+- <https://github.com/MiDataInt/mdi-apps-framework> 
+([documentation](/mdi-apps-framework))
 
 Most users will simply install the frameworks using the installer or manager and not 
 think about them further.
