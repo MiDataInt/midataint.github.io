@@ -74,7 +74,10 @@ can also reload an old bookmark to add new data to it, etc.
 
 ## Tool suite development
 
-The following link provides a detailed description of how
-to use our tool suite repository template to create your own tools:
+The following links provide detailed descriptions of how
+to use our tool suite repository template 
+and frameworks to create your own tools:
 
 - <{{ "/mdi-suite-template" | absolute_url  }}>
+- <{{ "/mdi-pipelines-framework" | absolute_url  }}>
+- <{{ "/mdi-apps-framework" | absolute_url  }}>
