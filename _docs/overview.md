@@ -4,6 +4,14 @@ has_children: false
 nav_order: 0
 ---
 
+{{ site.pages | inspect }}
+{% for pg in site.pages %}
+
+{{ pg | inspect }}
+
+{% endfor %}
+
+
 <!-- please do not alter the next line -->
 {% include mdi-project-overview.md %} 
 
