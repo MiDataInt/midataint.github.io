@@ -53,6 +53,8 @@ on your needs.
 In local mode, you run the R Shiny server on your desktop or laptop computer,
 which acts as both the web server and client (i.e., browser).
 
+{% include figure.html file="server-modes/local.png" title="Test" caption="This is a test caption" %}
+
 First, you must install R:
 
 - R project: <https://www.r-project.org/>
@@ -74,7 +76,12 @@ The advantages of this mode are security and speed.
 You can also use the batch script generator to create
 scripts to run the MDI apps in your local web browser from a server
 running on a remote HPC server, or one of its nodes, with a connection 
-over a secure, SSH port tunnel. Instructions can be found in script generator app.
+over a secure, SSH port tunnel. 
+
+{% include figure.html file="server-modes/remote.png" %}
+{% include figure.html file="server-modes/node.png" %}
+
+Instructions can be found in script generator app.
 
 - batch scripts: <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
 
@@ -84,7 +91,11 @@ to the same disk drives as your pipelines.
 ### Public server mode
 
 As noted above, advanced users can also set up a public Stage 2 web server
-using our AWS AMIs, as described in the following repositories:
+using our AWS AMIs:
+
+{% include figure.html file="server-modes/public.png" %}
+
+as described in the following repositories:
 
 - AWS AMIs: [mdi-empty machine images](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Images:visibility=public-images;v=3;search=:mdi-empty)
 - AMI repository: <https://github.com/MiDataInt/mdi-aws-ami>
