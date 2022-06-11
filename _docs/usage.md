@@ -23,6 +23,8 @@ job configuration files.
 
 - <{{ "/mdi" | absolute_url }}>
 
+{% include figure.html file="command-line/mdi.png" %}
+
 ## Stage 2 Apps
 
 Once you have successfully loaded the MDI apps interface
