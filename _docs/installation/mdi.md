@@ -53,7 +53,7 @@ on your needs.
 In local mode, you run the R Shiny server on your desktop or laptop computer,
 which acts as both the web server and client (i.e., browser).
 
-{% include figure.html file="server-modes/local.png" title="Test." caption="This is a test caption for this figure." %}
+{% include figure.html file="server-modes/local.png" %}
 
 First, you must install R:
 

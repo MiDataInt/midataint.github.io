@@ -73,10 +73,14 @@ can also reload an old bookmark to add new data to it, etc.
 ### Multiple parallel analyses
 
 Many MDI apps are designed to allow you to load multiple data
-packages at once and to use our sample assignment grid 
-to create comparisons within and between data sets. 
+packages at once using the launcher interface:
 
 {% include figure.html file="app-features/data-sources.png" %}
+
+and to use the sample assignment grid and other tools
+to create comparisons within and between data sets 
+for maximum versatility in data analysis: 
+
 {% include figure.html file="app-features/selection-grid.png" %}
 
 ## Tool suite development
