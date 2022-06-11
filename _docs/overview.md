@@ -4,19 +4,6 @@ has_children: false
 nav_order: 0
 ---
 
-
-{% for pg in site.pages %}
-
---------------------------------------
-title = {{ pg.title }}  
-parent = {{ pg.parent }}  
-grand_parent = {{ pg.grand_parent }}  
-nav_order = {{ pg.nav_order }}  
-url = {{ pg.url }}  
-
-{% endfor %}
-
-
 <!-- please do not alter the next line -->
 {% include mdi-project-overview.md %} 
 
