@@ -45,15 +45,12 @@ MDI apps are designed to have a stepwise execution according
 to the tabs on the left of the screen. You usually want
 to work through them in order (but can always go back).
 
-### Multiple parallel analyses
-
-Many MDI apps are designed to allow you to load multiple data
-packages at once and to use our sample assignment grid 
-to create comparisons within and between data sets. 
+{% include figure.html file="app-features/step-tabs.png" %}
 
 ### Settings (gear) and other useful icons
 
-Apps often have many features "hiding" behind various icons.
+Apps often have many features "hiding" behind various icons, like the 
+settings gear icon seen above.
 Click away, you can't really break anything. The point of Stage 2 Apps
 is to be interactive, so ... interact!
 
@@ -62,7 +59,8 @@ is to be interactive, so ... interact!
 A critical feature of the MDI is that you can save the state
 of the app to reload later.  While the initial incoming 
 data files are called 'packages', the work within an app
-is saved as a 'bookmark' file using the link on the left of page.
+is saved as a 'bookmark' file using the link on the left of page 
+(see screenshot above).
 
 Bookmark files end with '.mdi'. After saving one, you simply load it
 at the starting page instead of a data package. You will pick up
@@ -71,6 +69,15 @@ where you left off when you saved the file.
 Bookmarks are an extremely useful way to preserve the stage of
 and app that generated a figure for a manuscript, etc. You
 can also reload an old bookmark to add new data to it, etc.
+
+### Multiple parallel analyses
+
+Many MDI apps are designed to allow you to load multiple data
+packages at once and to use our sample assignment grid 
+to create comparisons within and between data sets. 
+
+{% include figure.html file="app-features/data-sources.png" %}
+{% include figure.html file="app-features/selection-grid.png" %}
 
 ## Tool suite development
 
