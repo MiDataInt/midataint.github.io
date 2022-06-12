@@ -16,7 +16,7 @@ the tools most relevant to them.
 
 The following diagram illustrates the overall project structure.
 
-{% include figure.html file="repo_structure_tool_suites_cropped.jpg" %}
+{% include figure.html file="project-structure.png" %}
 
 ## Installation and Management Utilities
 
