@@ -10,7 +10,7 @@ nav_order: 10
 
 The MDI manages data analysis flow in two stages with different handling, as depicted below. 
 
-![Analysis Flow]({{ "/assets/images/analysis-flow.png" | relative_url }})
+{% include figure.html file="analysis-flow.jpg" %}
 
 The critical distinctions between Stage 1 Pipelines and Stage 2
 Apps are enumerated below. Users and developers may be interested in 
