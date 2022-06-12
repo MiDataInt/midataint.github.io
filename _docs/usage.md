@@ -47,7 +47,7 @@ MDI apps are designed to have a stepwise execution according
 to the tabs on the left of the screen. You usually want
 to work through them in order (but can always go back).
 
-{% include figure.html file="app-features/step-tabs.png" border=true %}
+{% include figure.html file="app-features/step-tabs.png" border=true width="600px" %}
 
 ### Settings (gear) and other useful icons
 
