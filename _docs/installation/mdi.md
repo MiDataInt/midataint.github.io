@@ -17,20 +17,20 @@ Review the MDI's
 [conceptual analysis stages]({{ "/docs/analysis-flow" | relative_url }})
 to decide what kind of tools you seek to run.
 
-If you will run **Stage 1 Pipelines** on an HPC server
-(and possibly Stage 2 Apps accessed remotely),
-use our 'mdi' command line utility:
+If you will run **Stage 1 Pipelines** from the command line of
+an HPC server, install and use our 'mdi' utility:
 
 - repository: <https://github.com/MiDataInt/mdi>
 - documentation: <{{ "/mdi" | absolute_url }}>
 
 If you will run **Stage 2 Apps** on data generated elsewhere,
-do that on your personal computer by generating a
-batch script:
+including the Pipeline Runner app,
+do that on your personal computer using the MDI Desktop (recommended):
 
-- batch scripts: <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
+- repository: <https://github.com/MiDataInt/mdi-desktop-app>
+- documentation: <{{ "/mdi-desktop-app" | absolute_url }}>
 
-or from within R:
+or directly within an R console (not recommended for most users):
 
 - repository: <https://github.com/MiDataInt/mdi-manager> 
 - documentation: <{{ "/mdi-manager" | absolute_url }}>
@@ -55,14 +55,15 @@ which acts as both the web server and client (i.e., browser).
 
 First, you must install R:
 
-- R project: <https://www.r-project.org/>
+- R project via CRAN: <https://cran.r-project.org/>
 
-Then, the best path is to generate a custom batch script
-to install and run the server:
+Then, the best path is to use the MDI Desktop
+to install and run the server (recommended):
 
-- batch scripts: <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
+- MDI Desktop: <https://github.com/MiDataInt/mdi-desktop-app>
+- documentation: <{{ "/mdi-desktop-app" | absolute_url }}>
 
-Alternatively, install the MDI from within R as described here:
+Alternatively, install the MDI from within R as described here (not recommended for most users):
 
 - mdi-manager: <https://github.com/MiDataInt/mdi-manager#installation>
 - documentation: <{{ "/mdi-manager" | absolute_url }}>
@@ -71,12 +72,12 @@ The advantages of this mode are security and speed.
 
 ### Remote modes
 
-You can also use the batch script generator to create
-scripts to run the MDI apps in your local web browser from a server
-running on a remote HPC server, or one of its nodes, with a connection 
-over a secure, SSH port tunnel. Instructions can be found in script generator app.
+You can also use the MDI Desktop to install and run a MDI server
+on a remote HPC server, or one of its nodes, with a connection 
+over a secure, SSH port tunnel. 
 
-- batch scripts: <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
+- MDI Desktop: <https://github.com/MiDataInt/mdi-desktop-app>
+- documentation: <{{ "/mdi-desktop-app" | absolute_url }}>
 
 An advantage of this method is that your apps can have ready access
 to the same disk drives as your pipelines.

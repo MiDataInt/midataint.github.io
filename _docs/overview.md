@@ -37,31 +37,28 @@ To try out
 
 ### Quick Start
 
-Follow these instructions to clone and run the script that 
-will **install the MDI** frameworks and your tool suites of interest
-on an HPC server:
+Install the **MDI Desktop**, a program that helps you connect to a server as needed and run MDI tools from your Windows or Mac computer:
 
-- <https://github.com/MiDataInt/mdi#install-the-mdi-frameworks> 
-([documentation](/mdi/docs/installation.html))
+- [Install the MDI Desktop on your PC](/mdi-desktop-app/docs/installation)
 
-Alternatively, use this web site to generate a custom **batch script** for your 
-desktop computer, e.g., to control a remote MDI installation or run apps locally:
+Alternatively, follow these instructions to clone and run command-line 
+scripts that will install the MDI on an **HPC server**:
 
-- <https://wilsonte-umich.shinyapps.io/mdi-script-generator>
+- [Install the MDI CLI on an HPC server](/mdi/docs/installation)
 
 Tool developers should start by copying our **repository suite template**
-and following its [documentation](/mdi-suite-template).
+and following its [documentation](/mdi-suite-template):
 
-- <https://github.com/MiDataInt/mdi-suite-template>
+- [Create a new tool suite from the template](https://github.com/MiDataInt/mdi-suite-template/generate)
 
 ### Guiding Principles
 
-- easy, standardized implementation
-- simple, effective use of modern development tools
-- efficient use of scalable computation resources
-- maximum developer flexibility
+- effective use of modern development tools
+- optimal use of scalable computation resources
 - rapid collaboration and code sharing
 - interactive data analysis
+- standardized implementation frameworks
+- maximum developer flexibility
 
 Our goal is to help you develop and share robust
 data analysis tools more easily, or to use tools developed by others,
@@ -69,20 +66,18 @@ without forcing too many requirements into the process.
 
 ### Basic Training for Developers
 
-This documentation assumes familiarity with open source
-code development. Please see our 
+Please see our 
 [Basic Training](https://midataint.github.io/mdi-basic-training) tutorials 
 in the link below if you need help getting started with Git, R,
-Shiny, job schedulers, etc.
+Shiny, the command line, job schedulers, etc.
 
 ### Portability and Licensing
 
-The MDI was created to support researchers
-at the University of Michigan and a few instructions are specific 
-to our environment. However, the codebase is generic and can 
+The MDI can 
 be used by any laboratory or organization for any data analysis need
-under the MIT license.
-
+under the MIT license (a few instructions 
+are specific to the University of Michigan environment but the codebase
+is generic).
 
 <!-- please do not alter the next line -->
 {% include mdi-project-documentation.md %}

@@ -42,7 +42,7 @@ which are found in other code repositories called 'tool suites'.
 Instead, the framework encodes script utilities that:
 
 - allow YAML configuration files to be used to define a pipeline
-- wrap pipelines in a common command-line executable function
+- wrap pipelines in a common command-line interface (CLI)
 - coordinate pipeline job submission to HPC schedulers
 
 ## Stage 2: Visualization Apps

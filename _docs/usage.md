@@ -23,10 +23,16 @@ job configuration files.
 
 - <{{ "/mdi" | absolute_url }}>
 
+Alternatively, the Pipeline Runner app provides a graphical interface 
+to construct, run, and monitor the status of pipelines jobs. 
+The best way to use it is via the MDI Desktop via an SSH connection:
+
+- <{{ "/mdi-desktop-app" | absolute_url }}>
+
 ## Stage 2 Apps
 
 Once you have successfully loaded the MDI apps interface
-in your web browser, you simply need to load the data
+in a web browser, you simply load the data
 package created by an appropriate Stage 1 Pipeline, which 
 always ends in **mdi.package.zip**. 
 
@@ -35,7 +41,7 @@ access key is 'mdi-demo'.
 
 - <https://mdi-demo.wilsonte-umich.io>
 
-It is difficult to provide a lot of details beyond that
+It is difficult to provide more details here
 since every app will be different.  However, here are a few
 patterns to understand.
 
@@ -68,8 +74,8 @@ Bookmark files end with '.mdi'. After saving one, you simply load it
 at the starting page instead of a data package. You will pick up
 where you left off when you saved the file.
 
-Bookmarks are an extremely useful way to preserve the stage of
-and app that generated a figure for a manuscript, etc. You
+Bookmarks are extremely useful for preserving the state of
+an app that generated a figure for a manuscript, etc. You
 can also reload an old bookmark to add new data to it, etc.
 
 ## Tool suite development

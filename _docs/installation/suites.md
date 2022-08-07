@@ -14,7 +14,7 @@ by various developers.
 ## Enable tools suites in your MDI installation
 
 The following links provide information on how to tell your MDI installation
-which tool suites you wish to use by modifying file **config/suites.yml**:
+which tool suites you wish to use by updating file **config/suites.yml**:
 
 - <{{ "/mdi/docs/installation.html" | absolute_url }}>
 - <{{ "/mdi-suite-template/docs/suite_sharing.html" | absolute_url }}>

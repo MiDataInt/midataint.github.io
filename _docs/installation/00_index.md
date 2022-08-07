@@ -19,7 +19,7 @@ The installation sequence is:
 1. install the MDI
 2. load tools suites into your installation
 
-Please see the corresponding tabs at the left for details.
+Please see the corresponding tabs for details.
 
 ## Single-suite installation
 
