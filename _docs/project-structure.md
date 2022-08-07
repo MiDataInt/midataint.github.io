@@ -34,7 +34,7 @@ Even better and easier to use is the MDI Desktop App,
 an Electron app that helps users connect to HPC servers via SSH
 and to install and run both Stage 1 Pipelines and Stage 2 Apps, all
 from a convenient desktop program. The Desktop is usually 
-the best way to run the MDI locally or remotely.
+the best way access MDI tools, whether locally or remotely.
 
 These are the repositories for the MDI installation and management utilities:  
 
