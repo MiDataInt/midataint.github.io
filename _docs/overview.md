@@ -23,7 +23,7 @@ specific components, e.g., how to get started
    caption="Pipeline Runner web app running Stage 1 pipelines, remote HPC access" %}
 {% include screenshot.html 
    image="stage2-apps.jpg" 
-   caption="Stage 2 interactive apps via a access-controlled public web server" %}
+   caption="Stage 2 interactive apps via an access-controlled public web server" %}
 
 ### Live Demo
 
