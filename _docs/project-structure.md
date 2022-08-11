@@ -25,16 +25,16 @@ _install()_ pipelines and apps and _run()_ the web interface.
 The concept is similar to the BiocManager utility of the 
 [Bioconductor project](https://www.bioconductor.org/). 
 
-The MDI Installer is a distinct wrapper utility that makes it
-even easier to run the manager utility. It provides
-a streamlined, non-R installation alternative for people who will only 
-use Stage 1 pipelines, skipping the slower installation of Stage 2 
-R Shiny apps when they aren't needed. 
+The MDI Installer is a wrapper that makes it easier to run the manager utility. 
+It also provides a streamlined, non-R installation for people who will only 
+use Stage 1 pipelines on an HPC server, skipping the slower installation of Stage 2 R Shiny 
+apps when they aren't needed. 
 
-Another alternative for MDI installation management is the 
-[MDI script generator site](https://wilsonte-umich.shinyapps.io/mdi-script-generator)
-which helps users create custom batch scripts for their local computer 
-to install, control, and use the MDI in both local and remote installations.
+Even better and easier to use is the MDI Desktop App,
+an Electron app that helps users connect to HPC servers via SSH
+and to install and run both Stage 1 Pipelines and Stage 2 Apps, all
+from a convenient desktop program. The Desktop is usually 
+the best way access MDI tools, whether locally or remotely.
 
 These are the repositories for the MDI installation and management utilities:  
 
@@ -42,7 +42,8 @@ These are the repositories for the MDI installation and management utilities:
 ([documentation](/mdi))
 - <https://github.com/MiDataInt/mdi-manager> 
 ([documentation](/mdi-manager))
-- <https://github.com/MiDataInt/mdi-script-generator.git>
+- <https://github.com/MiDataInt/mdi-desktop-app> 
+([documentation](/mdi-desktop-app))
 
 ## Frameworks
 
@@ -54,14 +55,14 @@ one for Stage 1 pipelines and one for Stage 2 apps.
 
 The pipelines and apps frameworks are maintained by the MDI as open-source
 projects that you are invited to help improve. These are the
-repositories for the pipelines and apps frameworks:
+repositories for the frameworks:
 
 - <https://github.com/MiDataInt/mdi-pipelines-framework> 
 ([documentation](/mdi-pipelines-framework))
 - <https://github.com/MiDataInt/mdi-apps-framework> 
 ([documentation](/mdi-apps-framework))
 
-Most users will simply install the frameworks using the installer or manager and not 
+Most users will simply install the frameworks using the installer or desktop app and not 
 think about them further.
 
 ## Tool Suites

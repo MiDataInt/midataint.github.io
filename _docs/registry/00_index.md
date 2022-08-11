@@ -37,14 +37,14 @@ by the Code of Conduct below.
 
 ### MDI developer Code of Conduct
 
-Tool suite developers will follow these principles when writing code
+Tool suite developers must follow these principles when writing code
 to be executed in the Michigan Data Interface.
 
 - Tools will only perform actions on the user's system consistent with
 their stated purpose. 
 - No attempt will be made to send user data to a third party,
 over the internet or by any other means, unless doing so is a stated
-purpose of the tool and the third party is well identified or chosen
+purpose of the tool and the third party is clearly identified or chosen
 by the user.
 - Only files understood to be derived from input options will be 
 read from the user's file system; no attempt will be made to mine 

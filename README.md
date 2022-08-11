@@ -1,10 +1,14 @@
-## Repository description
+## MDI Project Documentation
 
-This is the repository for the 
-[main documentation web site](https://midataint.github.io/)
-of the **Michigan Data Interface**.
+The [Michigan Data Interface](https://midataint.github.io/) (MDI) 
+is a framework for developing, installing and running 
+Stage 1 HPC **pipelines** and Stage 2 interactive web applications 
+(i.e., **apps**) in a standardized design interface.
 
-This site uses a permanent, customized fork of the open source Jekyll documentation 
+This is the repository for the MDI's
+[main documentation web site](https://midataint.github.io/).
+
+The site uses a permanent, customized fork of the open source Jekyll documentation 
 theme [Just the Docs](https://pmarsceill.github.io/just-the-docs/), called
 [just-the-docs-mdi](https://github.com/MiDataInt/just-the-docs-mdi).
 
