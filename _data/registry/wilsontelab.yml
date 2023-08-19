@@ -16,7 +16,17 @@ suites:
         description: "Create a set of fixed-width bins with metadata for use by other pipelines"
     shared_modules:
       - name: align/dna-paired-end
-        description: "Clean paired-end reads and align to reference genome; output name-sorted bam/cram"
+        description: "Clean paired-end reads and align to a genome; output name-sorted bam/cram"
+      - name: align/dna-long-read
+        description: "Align long reads to a genome using minimap2; output name-sorted paf"
+      - name: nanopore/download
+        description: "Download Dorado and associated basecalling models"
+      - name: nanopore/convert
+        description: "Convert fast5 to pod5 format files"
+      - name: nanopore/basecall
+        description: "Use Dorado to perform basecalling on fast5 or pod5 files; output fastq files"
+      - name: pileup
+        description: "Create a genome coverage file readable by browser track base_pileup" 
 
 # svx-mdi-tools
   - name: svx-mdi-tools
@@ -24,15 +34,27 @@ suites:
     category: "Genomics : DNA"
     pipelines:
       - name: svCapture
-        description: "Characterize structural variant junctions in short-read, paired-end capture library(s)"
+        description: "Characterize structural variant junctions in short-read, paired-end capture sequencing"
       - name: svWGS
-        description: "Characterize structural variant junctions in whole-genomic, short-read, paired-end NGS data"
-      - name: wgaSeq
+        description: "Characterize structural variant junctions in whole-genomic, short-read, paired-end sequencing"
+      - name: svPore
+        description: "Characterize structural variant junctions in whole-genomic, long-read sequencing"
+      - name: svAmplicon
+        description: "Characterize structural variant junctions in short-read amplicon sequencing"
+      - name: svDJ
+        description: "Characterize structural variant junctions in long-read amplicon sequencing"
+      - name: scCNV
         description: "Examine single-cell, whole-genome sequencing data for large CNVs/aneuploidy"
     apps:
       - name: svCapture
         description: "Partner app to the svCapture pipeline"
       - name: svWGS
         description: "Partner app to the svWGS pipeline"
-      - name: wgaSeq
-        description: "Partner app to the wgaSeq pipeline"
+      - name: svPore
+        description: "Partner app to the svPore pipeline"
+      - name: svAmplicon
+        description: "Partner app to the svAmplicon pipeline"
+      - name: svDJ
+        description: "Partner app to the svDJ pipeline"
+      - name: scCNV
+        description: "Partner app to the scCNV pipeline"

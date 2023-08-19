@@ -25,7 +25,27 @@ specific components, e.g., how to get started
    image="stage2-apps.jpg" 
    caption="Stage 2 interactive apps via an access-controlled public web server" %}
 
-### Live Demo
+### Quick Start
+
+Follow these instructions to clone and install the MDI **command line interface** on an HPC server:
+
+- [Install the MDI CLI on an HPC server](/mdi/docs/installation)
+
+Install the **MDI Desktop**, a program that helps you connect to a server and run MDI apps from your Windows or Mac computer:
+
+- [Install the MDI Desktop on your PC](/mdi-desktop-app/docs/installation)
+
+Tool developers should start by copying our **repository suite template**
+and following its [documentation](/mdi-suite-template):
+
+- [Create a new tool suite from the template](https://github.com/MiDataInt/mdi-suite-template/generate)
+
+See the following for a barebones summary of
+the structure of job, pipeline, and app **configuration files**:
+
+- [Barebones anatomy of configuration files](/mdi/docs/barebones)
+
+### Live App Demo
 
 To try out 
 [this repository's](https://github.com/MiDataInt/demo-mdi-tools)
@@ -35,27 +55,11 @@ To try out
 - enter the access key: <code>mdi-demo</code>
 - click <code>Load from Server</code> and select a data package or bookmark to load
 
-### Quick Start
-
-Install the **MDI Desktop**, a program that helps you connect to a server as needed and run MDI tools from your Windows or Mac computer:
-
-- [Install the MDI Desktop on your PC](/mdi-desktop-app/docs/installation)
-
-Alternatively, follow these instructions to clone and run command-line 
-scripts that will install the MDI on an **HPC server**:
-
-- [Install the MDI CLI on an HPC server](/mdi/docs/installation)
-
-Tool developers should start by copying our **repository suite template**
-and following its [documentation](/mdi-suite-template):
-
-- [Create a new tool suite from the template](https://github.com/MiDataInt/mdi-suite-template/generate)
-
 ### Guiding Principles
 
-- effective use of modern development tools
+- effective, streamlined use of modern development tools
 - optimal use of scalable computation resources
-- rapid collaboration and code sharing
+- rapid collaboration, code sharing, and community building
 - interactive data analysis
 - standardized implementation frameworks
 - maximum developer flexibility
@@ -68,16 +72,16 @@ without forcing too many requirements into the process.
 
 Please see our 
 [Basic Training](https://midataint.github.io/mdi-basic-training) tutorials 
-in the link below if you need help getting started with Git, R,
-Shiny, the command line, job schedulers, etc.
+in the link below if you need help getting started with Git, the command line, job schedulers, 
+R, Shiny, etc.
 
 ### Portability and Licensing
 
 The MDI can 
 be used by any laboratory or organization for any data analysis need
-under the MIT license (a few instructions 
+under the MIT license. A few instructions 
 are specific to the University of Michigan environment but the codebase
-is generic).
+is generic.
 
 <!-- please do not alter the next line -->
 {% include mdi-project-documentation.md %}
