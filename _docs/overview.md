@@ -43,7 +43,7 @@ and following its [documentation](/mdi-suite-template):
 See the following for a barebones summary of
 the structure of job, pipeline, and app **configuration files**:
 
-- [Barebones anatomy of configuration files](/mdi/docs/barebones)
+- [Barebones anatomy of configuration files](/docs/barebones)
 
 ### Live App Demo
 
