@@ -17,7 +17,7 @@ must be replaced with the actual name of something.
 - Similar names in different places refer to the same type of thing, 
 e.g., a pipeline.
 - Job file templates are available by calling `mdi <pipelineName> template`.
-- Tool templates are available in the [mdi-suite-template]().
+- Tool templates are available in the [mdi-suite-template](/mdi-suite-template/overview).
 
 ## Stage 1 pipeline job files
 
