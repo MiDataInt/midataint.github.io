@@ -30,10 +30,10 @@ It also provides a streamlined, non-R installation for people who will only
 use Stage 1 pipelines on an HPC server, skipping the slower installation of Stage 2 R Shiny 
 apps when they aren't needed. 
 
-Even better and easier to use is the MDI Desktop App,
+The MDI Desktop App is
 an Electron app that helps users connect to HPC servers via SSH
 and to install and run both Stage 1 Pipelines and Stage 2 Apps, all
-from a convenient desktop program. The Desktop is usually 
+from a convenient desktop program. The Desktop is often 
 the best way access MDI tools, whether locally or remotely.
 
 These are the repositories for the MDI installation and management utilities:  

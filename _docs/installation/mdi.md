@@ -8,13 +8,13 @@ nav_order: 1
 {% include table-of-contents.md %}
 
 This section describes the paths to installing the MDI itself, 
-i.e., the frameworks. It is easy, but there are many ways
+i.e., the frameworks. It is easy, but there are several ways
 to do it. The following are important decision points.
 
 ## Stage 1 Pipelines vs. Stage 2 Apps
 
 Review the MDI's 
-[conceptual analysis stages]({{ "/docs/analysis-flow" | relative_url }})
+[analysis stages]({{ "/docs/analysis-flow" | relative_url }})
 to decide what kind of tools you seek to run.
 
 If you will run **Stage 1 Pipelines** from the command line of
