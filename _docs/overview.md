@@ -27,7 +27,7 @@ specific components, e.g., how to get started
 
 ### Quick Start
 
-Follow these instructions to clone and install the MDI command line interface on an **HPC server**:
+Follow these instructions to clone and install the MDI **command line interface** on an HPC server:
 
 - [Install the MDI CLI on an HPC server](/mdi/docs/installation)
 
