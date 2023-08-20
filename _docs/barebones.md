@@ -10,12 +10,11 @@ Many MDI tasks
 are accomplished by writing YML format configuration files.
 This page summarizes their barebones structure for quick reference. 
 Extended documentation is provided elsewhere.
-- All possible entries are shown - not all are required.
-- Items in square brackets [] list the allowed values.
-- Items in angled brackets \<\>
-must be replaced with the actual name of something.
-- Similar names in different places refer to the same type of thing, 
-e.g., a pipeline.
+- In "minimal examples", only required entries are shown with example values.
+- In "complete structures", all possible entries are shown, not all are required.
+- Items in square brackets [] list allowed values.
+- Items in angled brackets \<\> must be replaced with the actual name of something.
+- Similar names in different places refer to the same type of thing, e.g., a pipeline.
 - Job file templates are available by calling `mdi <pipelineName> template`.
 - Tool templates are available in the [mdi-suite-template]().
 
@@ -27,12 +26,33 @@ end users write a job file, a.k.a. a data script,
 to declare the inputs, options, and output paths for their specific 
 work to be done by a pipeline. Pipelines can 
 be called with all options defined on the command line, 
-but using job files is strongly recommended.
+but using job files is strongly recommended for organization and 
+to create a permanent record.
+
+### Minimal example
 
 ```yml
-# my-data.yml
+# my-data.yml - minimal example
 ---
-pipeline: <toolSuiteName>/<pipelineName>:[<semanticVersion>|<gitBranch>|latest]
+pipeline: myPipeline
+do:
+    my-options:
+        option1: /path/to/input55
+    output:
+        output-dir: /path/to/my/output
+        data-name:  sample55
+    job-manager:
+        account:    myAccount # if submitting to a job scheduler
+execute:
+    - do
+```
+
+### Complete structure
+
+```yml
+# my-data.yml - complete structure
+---
+pipeline: <toolSuiteName>/<pipelineName>:[<semanticVersion>|<gitBranch>|latest] # only pipelineName is required
 variables: # for accessing common values below, in bash style
     <VAR_NAME>: <value>
 shared: # options set for all relevant actions
@@ -85,8 +105,40 @@ As described in detail
 it's actions, options, and program dependencies - 
 are defined by developers in file 'pipeline.yml'. 
 
+### Minimal example
+
 ```yml
-# pipelines/<pipelineName>/pipeline.yml
+# pipelines/myPipeline/pipeline.yml - minimal example
+---
+pipeline:
+    name: myPipeline
+    description: "short text description"
+actions:
+    do: 
+        condaFamilies:
+            - base
+            - my-packages    
+        optionFamilies:
+            - my-options
+        description: "short text description"    
+condaFamilies:
+    my-packages:
+        dependencies:
+            - python
+optionFamilies:
+    my-options:
+        options:
+            option1: 
+                type: string
+                required: true
+                default: null
+                description: "short text description"   
+```
+
+### Complete structure
+
+```yml
+# pipelines/<pipelineName>/pipeline.yml - complete structure
 ---
 pipeline: # pipeline metadata
     name: <pipelineName>
@@ -131,7 +183,7 @@ condaFamilies: # conda family definitions
         dependencies:
             - <packageName>
 optionFamilies: # option family definitions   
-    <optionsFamilyName> :
+    <optionsFamilyName>:
         options:
             <optionName>: 
                 order: 1
@@ -163,8 +215,29 @@ As described in detail
 it's data inputs and app step modules - 
 are defined by developers in file 'config.yml'.
 
+### Minimal example
+
 ```yml
-# shiny/apps/<appName>/config.yml
+# shiny/apps/myApp/config.yml - minimal example
+---
+name: myApp
+description: "short text description"
+uploadTypes:
+    myPackageType: 
+        contentFileTypes:
+            myFileType:  
+                required: true
+appSteps: 
+    upload:
+        module: sourceFileUpload
+    tables:
+        module: makeTables
+```
+
+### Complete structure
+
+```yml
+# shiny/apps/<appName>/config.yml - complete structure
 ---
 name: <appName> # app metadata
 description: "short text description"
@@ -186,11 +259,28 @@ appSteps:
                 # as required by appStepModule
 ```
 
+## Stage 2 appStep module configuration files
+
 An app step module is defined by its ui.R and server.R scripts
 and in config file 'module.yml'.
 
+### Minimal example
+
 ```yml
-# modules/appSteps/<appStepName>/module.yml
+# modules/appSteps/makeTables/module.yml - minimal example
+shortLabel:       "Make Tables" 
+shortDescription: "Show various summary tables of the input data."
+longLabel:        "Make summary tables"
+types: 
+    - tables
+sourceTypes: 
+    - upload
+```
+
+### Complete structure
+
+```yml
+# modules/appSteps/<appStepName>/module.yml - complete structure
 shortLabel:       "Tab Label" 
 shortDescription: "Short text description."
 longLabel:        "App step header text"
