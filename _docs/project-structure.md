@@ -130,6 +130,9 @@ MDI server installation using
 - <https://github.com/MiDataInt/mdi-web-server.git>
 - <https://github.com/MiDataInt/mdi-aws-ami.git>
 
+Full public web server documentation is provided here:
+- <https://midataint.github.io/mdi-aws-ami>
+
 ## Singularity Container Support
 
 The MDI project places a premium on controlled compute environments 
