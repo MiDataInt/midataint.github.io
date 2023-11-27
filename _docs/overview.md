@@ -25,6 +25,17 @@ specific components, e.g., how to get started
    image="stage2-apps.jpg" 
    caption="Stage 2 interactive apps via an access-controlled public web server" %}
 
+### Video Overviews
+
+{% include kaltura_video_thumbnail.html 
+   thumbnail="mdi-what-is-it.jpg" 
+   caption="The MDI - What is it?"   
+   src="https://cdnapisec.kaltura.com/p/1038472/sp/103847200/embedIframeJs/uiconf_id/46145191/partner_id/1038472?iframeembed=true&playerId=kaltura_player&entry_id=1_yabesq04&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en_US&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_g7wbn1db"
+   width="608"
+   height="402" %}
+
+{% include kaltura_player.html %}
+
 ### Quick Start
 
 Follow these instructions to clone and install the MDI **command line interface** on an HPC server:
